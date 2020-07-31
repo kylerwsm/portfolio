@@ -6,6 +6,7 @@ import Collapse from '@material-ui/core/Collapse'
 import useHomeStyles from '../styles/home.styles'
 import Linked from '../components/linked'
 import Layout from '../components/layout'
+import Footer from '../components/footer'
 
 export default function Home() {
   const classes = useHomeStyles()
@@ -14,7 +15,7 @@ export default function Home() {
   const [showAllEducation, setShowAllEducation] = React.useState(false)
   return (
     <Layout>
-      <main>
+      <main className={classes.root}>
         <div id="introduction">
           <div id="title" className={classes.appTitle}>
             <Typography variant="h2" gutterBottom>
@@ -68,11 +69,12 @@ export default function Home() {
               {'Software Engineer Intern @ Open Government Products'}
             </Typography>
             <Typography variant="body1" className={classes.subtitle}>
-              I co-started an internal project to develop a mobile application
-              that gives users more food insights, and contributed to the
-              revamp, and open-sourcing of Go.gov.sg, the official link
-              shortener for the Singapore government. The stack relevant to my
-              work are Apollo GraphQL, Express.js, Flutter, and React.js.
+              Started an internal project that gives users more food insights.
+              Hugely contributed to the revamp and open-sourcing of Go.gov.sg,
+              the official link shortener for the Singapore government.
+              Initiated and oversaw improvements for Go.gov.sg, which includes
+              the link analytics feature, and TypeScript and React hooks
+              migration for better application robustness.
             </Typography>
           </div>
           <Collapse in={showAllExperience}>
@@ -187,7 +189,8 @@ export default function Home() {
           </Collapse>
         </div>
       </main>
-      <footer></footer>
+
+      <Footer />
     </Layout>
   )
 }

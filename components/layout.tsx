@@ -1,6 +1,7 @@
 import React from 'react'
 
 import useLayoutStyles from '../styles/layout.styles'
+import Container from '@material-ui/core/Container'
 
 export type LayoutProps = {
   children: React.ReactNode
@@ -8,5 +9,9 @@ export type LayoutProps = {
 
 export default function Layout(props: LayoutProps) {
   const classes = useLayoutStyles()
-  return <div className={classes.root}>{props.children}</div>
+  return (
+    <Container maxWidth="md" className={classes.root}>
+      {props.children}
+    </Container>
+  )
 }
