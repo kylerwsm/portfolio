@@ -1,9 +1,9 @@
 import React from 'react'
 
-import useHomeStyles from '../styles/home.styles'
 import Typography from '@material-ui/core/Typography'
 import Collapse from '@material-ui/core/Collapse'
 
+import useHomeStyles from '../styles/home.styles'
 import Linked from '../components/linked'
 import Layout from '../components/layout'
 
