@@ -15,7 +15,7 @@ export default function Home() {
   const [showAllEducation, setShowAllEducation] = React.useState(false)
   return (
     <Layout>
-      <main className={classes.root}>
+      <main>
         <div id="introduction">
           <div id="title" className={classes.appTitle}>
             <Typography variant="h2" gutterBottom>

@@ -1,7 +1,8 @@
 import React from 'react'
 
-import useLayoutStyles from '../styles/layout.styles'
 import Container from '@material-ui/core/Container'
+
+import useLayoutStyles from '../styles/layout.styles'
 
 export type LayoutProps = {
   children: React.ReactNode

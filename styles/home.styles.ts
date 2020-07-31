@@ -1,9 +1,6 @@
 import makeStyles from '@material-ui/core/styles/makeStyles'
 
 const useHomeStyles = makeStyles(() => ({
-  root: {
-    flex: 1,
-  },
   appTitle: {
     marginTop: 48,
     marginBottom: 48,

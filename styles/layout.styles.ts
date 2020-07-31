@@ -2,9 +2,6 @@ import makeStyles from '@material-ui/core/styles/makeStyles'
 
 const useLayoutStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    flexDirection: 'column',
-    minHeight: '100vh',
     marginLeft: 32,
     marginRight: 32,
     [theme.breakpoints.up('sm')]: {

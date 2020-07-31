@@ -2,7 +2,7 @@ import makeStyles from '@material-ui/core/styles/makeStyles'
 
 const useFooterStyles = makeStyles((theme) => ({
   root: {
-    marginTop: 48,
+    marginTop: 32,
     marginBottom: 48,
   },
   buttonRow: {
