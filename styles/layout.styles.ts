@@ -2,6 +2,9 @@ import makeStyles from '@material-ui/core/styles/makeStyles'
 
 const useLayoutStyles = makeStyles((theme) => ({
   root: {
+    width: 'unset',
+    paddingLeft: 0,
+    paddingRight: 0,
     marginLeft: 32,
     marginRight: 32,
     [theme.breakpoints.up('sm')]: {
