@@ -69,12 +69,11 @@ export default function Home() {
               {'Software Engineer Intern @ Open Government Products'}
             </Typography>
             <Typography variant="body1" className={classes.subtitle}>
-              Started an internal project that gives users more food insights.
               Hugely contributed to the revamp and open-sourcing of Go.gov.sg,
               the official link shortener for the Singapore government.
-              Initiated and oversaw improvements for Go.gov.sg, which includes
-              the link analytics feature, and TypeScript and React hooks
-              migration for better application robustness.
+              Additionally, initiated and oversaw improvements, such as the link
+              analytics feature, and TypeScript and React hooks migration for
+              better application robustness.
             </Typography>
           </div>
           <Collapse in={showAllExperience}>
@@ -82,11 +81,10 @@ export default function Home() {
               {'Teaching Assistant @ National University of Singapore'}
             </Typography>
             <Typography variant="body1" className={classes.subtitle}>
-              As a teaching assistant, I prepare teaching materials, and hold
-              recitations and lab sessions for undergraduate students. Modules I
-              taught includes topics like Object-Oriented Programming, Software
-              Engineering, Computer Organisation. These modules were taught in
-              Java, C, and MIPS.
+              Prepared teaching materials, and held recitations and lab sessions
+              for undergraduate students. Modules I taught includes topics like
+              Object-Oriented Programming, Software Engineering, and Computer
+              Organisation. These modules were taught in Java, C, and MIPS.
             </Typography>
             <Typography variant="h5" className={classes.subtitle}>
               {'Software Engineer Intern @ Housing & Development Board'}
@@ -124,9 +122,9 @@ export default function Home() {
               disseminate my personal dynamic links. An example shortened link
               is https://go.kylerwong.dev/linkedin, which deterministically
               redirects to my LinkedIn profile. Anyway, the source code is
-              public and can be found{' '}
+              public and can be found on my{' '}
               <Linked href="https://github.com/kylerwsm/lambda-links">
-                here
+                GitHub
               </Linked>
               .
             </Typography>

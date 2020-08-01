@@ -15,21 +15,29 @@ export default function Footer() {
         <div className={classes.icon}>
           <Tooltip title={GITHUB_LINK} placement="top" arrow>
             <IconButton href={GITHUB_LINK} target="_blank">
-              <img src="/icons/bxl-github.svg" draggable={false} />
+              <img src="/icons/bxl-github.svg" alt="GitHub" draggable={false} />
             </IconButton>
           </Tooltip>
         </div>
         <div className={classes.icon}>
           <Tooltip title={LINKEDIN_LINK} placement="top" arrow>
             <IconButton href={LINKEDIN_LINK} target="_blank">
-              <img src="/icons/bxl-linkedin-square.svg" draggable={false} />
+              <img
+                src="/icons/bxl-linkedin-square.svg"
+                alt="LinkedIn"
+                draggable={false}
+              />
             </IconButton>
           </Tooltip>
         </div>
         <div className={classes.icon}>
           <Tooltip title={INSTAGRAM_LINK} placement="top" arrow>
             <IconButton href={INSTAGRAM_LINK} target="_blank">
-              <img src="/icons/bxl-instagram-alt.svg" draggable={false} />
+              <img
+                src="/icons/bxl-instagram-alt.svg"
+                alt="Instagram"
+                draggable={false}
+              />
             </IconButton>
           </Tooltip>
         </div>

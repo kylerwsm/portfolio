@@ -57,7 +57,7 @@ const theme = responsiveFontSizes(
     },
     palette: {
       primary: {
-        main: '#308355',
+        main: '#475c66',
       },
       secondary: {
         main: '#EEB238',
@@ -139,11 +139,11 @@ const theme = responsiveFontSizes(
       },
       MuiTooltip: {
         tooltip: {
-          backgroundColor: '#308355',
+          backgroundColor: '#475c66',
           fontSize: '0.8125rem',
         },
         arrow: {
-          color: '#308355',
+          color: '#475c66',
         },
       },
     },
