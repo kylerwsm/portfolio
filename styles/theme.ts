@@ -5,12 +5,12 @@ const theme = responsiveFontSizes(
     typography: {
       fontFamily: "'IBM Plex Sans', sans-serif",
       h1: {
-        fontSize: '3.4375rem',
-        fontWeight: 700,
-        lineHeight: 1.182,
+        fontSize: '2.8125rem',
+        fontWeight: 600,
+        lineHeight: 1.267,
       },
       h2: {
-        fontSize: '2.8125rem',
+        fontSize: '2.25rem',
         fontWeight: 600,
         lineHeight: 1.267,
       },
@@ -57,7 +57,7 @@ const theme = responsiveFontSizes(
     },
     palette: {
       primary: {
-        main: '#475c66',
+        main: '#5884A3',
       },
       secondary: {
         main: '#EEB238',

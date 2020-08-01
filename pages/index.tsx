@@ -1,7 +1,9 @@
 import React from 'react'
+import Link from 'next/link'
 
-import Typography from '@material-ui/core/Typography'
 import Collapse from '@material-ui/core/Collapse'
+import MuiLink from '@material-ui/core/Link'
+import Typography from '@material-ui/core/Typography'
 
 import useHomeStyles from '../styles/home.styles'
 import Linked from '../components/linked'
@@ -18,7 +20,7 @@ export default function Home() {
       <main>
         <div id="introduction">
           <div id="title" className={classes.appTitle}>
-            <Typography variant="h2" gutterBottom>
+            <Typography variant="h1" gutterBottom>
               Hello,
             </Typography>
             <Typography variant="h3">My name is Kyler Wong.</Typography>
@@ -59,7 +61,10 @@ export default function Home() {
               className={classes.title}
               display="inline"
             >
-              <Linked onClick={() => setShowAllExperience(!showAllExperience)}>
+              <Linked
+                underline="none"
+                onClick={() => setShowAllExperience(!showAllExperience)}
+              >
                 {!showAllExperience ? 'Show More' : 'Show Less'}
               </Linked>
             </Typography>
@@ -108,7 +113,10 @@ export default function Home() {
               className={classes.title}
               display="inline"
             >
-              <Linked onClick={() => setShowAllProjects(!showAllProjects)}>
+              <Linked
+                underline="none"
+                onClick={() => setShowAllProjects(!showAllProjects)}
+              >
                 {!showAllProjects ? 'Show More' : 'Show Less'}
               </Linked>
             </Typography>
@@ -120,9 +128,16 @@ export default function Home() {
             <Typography variant="body1" className={classes.subtitle}>
               This is a simple link shortener application I have built to
               disseminate my personal dynamic links. An example shortened link
-              is https://go.kylerwong.dev/linkedin, which deterministically
-              redirects to my LinkedIn profile. Anyway, the source code is
-              public and can be found on my{' '}
+              is{' '}
+              <Linked href="https://go.kylerwong.dev/linkedin">
+                https://go.kylerwong.dev/linkedin
+              </Linked>
+              , which deterministically redirects to my LinkedIn profile. Find
+              out more about it on{' '}
+              <Link href="/go">
+                <MuiLink>this page</MuiLink>
+              </Link>
+              . Anyway, the source code is also public and can be found on my{' '}
               <Linked href="https://github.com/kylerwsm/lambda-links">
                 GitHub
               </Linked>
@@ -143,7 +158,10 @@ export default function Home() {
               className={classes.title}
               display="inline"
             >
-              <Linked onClick={() => setShowAllEducation(!showAllEducation)}>
+              <Linked
+                underline="none"
+                onClick={() => setShowAllEducation(!showAllEducation)}
+              >
                 {!showAllEducation ? 'Show More' : 'Show Less'}
               </Linked>
             </Typography>

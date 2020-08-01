@@ -1,5 +1,3 @@
-import Tooltip from '@material-ui/core/Tooltip'
-
 import useFooterStyles from '../styles/footer.styles'
 import IconButton from '@material-ui/core/IconButton'
 
@@ -13,33 +11,27 @@ export default function Footer() {
     <footer className={classes.root}>
       <section className={classes.buttonRow}>
         <div className={classes.icon}>
-          <Tooltip title={GITHUB_LINK} placement="top" arrow>
-            <IconButton href={GITHUB_LINK} target="_blank">
-              <img src="/icons/bxl-github.svg" alt="GitHub" draggable={false} />
-            </IconButton>
-          </Tooltip>
+          <IconButton href={GITHUB_LINK} target="_blank">
+            <img src="/icons/bxl-github.svg" alt="GitHub" draggable={false} />
+          </IconButton>
         </div>
         <div className={classes.icon}>
-          <Tooltip title={LINKEDIN_LINK} placement="top" arrow>
-            <IconButton href={LINKEDIN_LINK} target="_blank">
-              <img
-                src="/icons/bxl-linkedin-square.svg"
-                alt="LinkedIn"
-                draggable={false}
-              />
-            </IconButton>
-          </Tooltip>
+          <IconButton href={LINKEDIN_LINK} target="_blank">
+            <img
+              src="/icons/bxl-linkedin-square.svg"
+              alt="LinkedIn"
+              draggable={false}
+            />
+          </IconButton>
         </div>
         <div className={classes.icon}>
-          <Tooltip title={INSTAGRAM_LINK} placement="top" arrow>
-            <IconButton href={INSTAGRAM_LINK} target="_blank">
-              <img
-                src="/icons/bxl-instagram-alt.svg"
-                alt="Instagram"
-                draggable={false}
-              />
-            </IconButton>
-          </Tooltip>
+          <IconButton href={INSTAGRAM_LINK} target="_blank">
+            <img
+              src="/icons/bxl-instagram-alt.svg"
+              alt="Instagram"
+              draggable={false}
+            />
+          </IconButton>
         </div>
       </section>
     </footer>

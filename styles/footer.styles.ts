@@ -1,6 +1,6 @@
 import makeStyles from '@material-ui/core/styles/makeStyles'
 
-const useFooterStyles = makeStyles((theme) => ({
+const useFooterStyles = makeStyles(() => ({
   root: {
     marginTop: 32,
     marginBottom: 48,
@@ -11,6 +11,9 @@ const useFooterStyles = makeStyles((theme) => ({
   icon: {
     width: 28,
     marginRight: 32,
+    '&:first-child': {
+      marginLeft: -12,
+    },
     '&:last-child': {
       marginRight: 0,
     },
