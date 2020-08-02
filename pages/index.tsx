@@ -171,11 +171,11 @@ export default function Home() {
               {'Computer Science @ National University of Singapore'}
             </Typography>
             <Typography variant="body1" className={classes.subtitle}>
-              I pursued my honours degree in NUS in the 2017 to 2021 period.
-              Over these years, apart from studying really hard and balancing my
-              school-life balance, I also participated in a wide range of
-              activities, picking up roles such as Teaching Assistant, Student
-              Orientation Leader, and Student Volunteer.
+              I pursued my NUS Computing degree with Honours over the 2017 to
+              2021 period. In these years, apart from studying really hard and
+              coping with school-life imbalance, I also participated in a wide
+              range of activities, picking up roles such as Teaching Assistant,
+              Student Orientation Leader, and Student Volunteer.
             </Typography>
           </div>
           <Collapse in={showAllEducation}>
