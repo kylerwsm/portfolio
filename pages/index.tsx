@@ -38,16 +38,13 @@ export default function Home() {
             About Me
           </Typography>
           <Typography variant="body1" className={classes.subtitle}>
-            I am a Computer Science penultimate student at the National
-            University of Singapore. As a tech enthusiast, I find myself
-            consistently spending a chunk of my time learning and developing
-            arbitrary apps with new tech stacks. Weird how building things out
-            of nothing brings me joy.
-          </Typography>
-          <Typography variant="body1" className={classes.subtitle}>
-            I am a strong believer in ethical and collaborative programming, and
-            am constantly looking for opportunities to make a change the digital
-            way. When I am not programming, you might find me contributing to{' '}
+            I am a final year computing student at the National University of
+            Singapore. As a tech enthusiast, I find myself spending a chunk of
+            my time learning and developing arbitrary apps with new tech stacks.
+            Weird how building things out of nothing brings me joy. I am also a
+            believer of ethical and collaborative programming, and am constantly
+            looking for opportunities to make a change the digital way. When I
+            am not programming, you might find me contributing to{' '}
             <Linked href="https://dsc.comp.nus.edu.sg/">#techforgood</Linked>,
             cooking my favourite dishes, or jogging really slowly.
           </Typography>
@@ -79,7 +76,7 @@ export default function Home() {
             </Typography>
             <Typography variant="body1" className={classes.subtitle}>
               Supported and facilitated the backend development of new highly
-              scalable and reliable microservices. These microservices will be
+              scalable and reliable microservices. These microservices are
               responsible for delivering and customising real-time shipping
               updates to shippers and consignees in the region.
             </Typography>
@@ -87,11 +84,12 @@ export default function Home() {
               {'Software Engineer Intern @ Open Government Products'}
             </Typography>
             <Typography variant="body1" className={classes.subtitle}>
-              Hugely contributed to the revamp and open-sourcing of Go.gov.sg,
-              the official link shortener for the Singapore government.
-              Additionally, initiated and oversaw improvements, such as the link
-              analytics feature, and TypeScript and React hooks migration for
-              better application robustness.
+              Hugely contributed to the revamp and open-sourcing of{' '}
+              <Linked href="https://go.gov.sg">Go.gov.sg</Linked>, the official
+              link shortener for the Singapore government. Additionally,
+              initiated and oversaw improvements, such as the link analytics
+              feature, and TypeScript and React hooks migration for better
+              application robustness.
             </Typography>
           </div>
           <Collapse in={showAllExperience}>
