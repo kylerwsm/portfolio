@@ -16,6 +16,19 @@ export default function Home() {
   const [showAllExperience, setShowAllExperience] = React.useState(false)
   const [showAllProjects, setShowAllProjects] = React.useState(false)
   const [showAllEducation, setShowAllEducation] = React.useState(false)
+  const toggle = ({
+    openExperience = false,
+    openProjects = false,
+    openEducation = false,
+  }: {
+    openExperience?: boolean
+    openProjects?: boolean
+    openEducation?: boolean
+  }) => {
+    setShowAllExperience(openExperience)
+    setShowAllProjects(openProjects)
+    setShowAllEducation(openEducation)
+  }
   return (
     <Layout>
       <main>
@@ -64,7 +77,7 @@ export default function Home() {
             >
               <Linked
                 underline="none"
-                onClick={() => setShowAllExperience(!showAllExperience)}
+                onClick={() => toggle({ openExperience: !showAllExperience })}
               >
                 {!showAllExperience ? 'Show More' : 'Show Less'}
               </Linked>
@@ -132,7 +145,7 @@ export default function Home() {
             >
               <Linked
                 underline="none"
-                onClick={() => setShowAllProjects(!showAllProjects)}
+                onClick={() => toggle({ openProjects: !showAllProjects })}
               >
                 {!showAllProjects ? 'Show More' : 'Show Less'}
               </Linked>
@@ -183,7 +196,7 @@ export default function Home() {
             >
               <Linked
                 underline="none"
-                onClick={() => setShowAllEducation(!showAllEducation)}
+                onClick={() => toggle({ openEducation: !showAllEducation })}
               >
                 {!showAllEducation ? 'Show More' : 'Show Less'}
               </Linked>
