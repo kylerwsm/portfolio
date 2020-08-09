@@ -33,6 +33,10 @@ const useHomeStyles = makeStyles(() => ({
     display: 'flex',
     alignItems: 'baseline',
   },
+  divider: {
+    marginTop: 32,
+    marginBottom: 32,
+  },
 }))
 
 export default useHomeStyles

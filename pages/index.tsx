@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 
 import Collapse from '@material-ui/core/Collapse'
+import Divider from '@material-ui/core/Divider'
 import MuiLink from '@material-ui/core/Link'
 import Typography from '@material-ui/core/Typography'
 
@@ -52,6 +53,9 @@ export default function Home() {
           </Typography>
         </div>
         <div id="experience" className={classes.sectionRoot}>
+          <Collapse in={showAllExperience}>
+            <Divider className={classes.divider} />
+          </Collapse>
           <div>
             <Typography variant="h3" className={classes.title} display="inline">
               My Experience
@@ -70,6 +74,15 @@ export default function Home() {
             </Typography>
           </div>
           <div>
+            <Typography variant="h5" className={classes.subtitle}>
+              {'Software Engineer Intern @ Ninja Van'}
+            </Typography>
+            <Typography variant="body1" className={classes.subtitle}>
+              Supported and facilitated the backend development of new highly
+              scalable and reliable microservices. These microservices will be
+              responsible for delivering and customising real-time shipping
+              updates to shippers and consignees in the region.
+            </Typography>
             <Typography variant="h5" className={classes.subtitle}>
               {'Software Engineer Intern @ Open Government Products'}
             </Typography>
@@ -102,8 +115,14 @@ export default function Home() {
               Additionally, I compiled and presented a vendor analysis.
             </Typography>
           </Collapse>
+          <Collapse in={showAllExperience}>
+            <Divider className={classes.divider} />
+          </Collapse>
         </div>
         <div id="projects" className={classes.sectionRoot}>
+          <Collapse in={showAllProjects}>
+            <Divider className={classes.divider} />
+          </Collapse>
           <div>
             <Typography variant="h3" className={classes.title} display="inline">
               My Projects
@@ -147,8 +166,14 @@ export default function Home() {
           <Collapse in={showAllProjects}>
             <div></div>
           </Collapse>
+          <Collapse in={showAllProjects}>
+            <Divider className={classes.divider} />
+          </Collapse>
         </div>
         <div id="education" className={classes.sectionRoot}>
+          <Collapse in={showAllEducation}>
+            <Divider className={classes.divider} />
+          </Collapse>
           <div>
             <Typography variant="h3" className={classes.title} display="inline">
               My Education
@@ -177,8 +202,6 @@ export default function Home() {
               range of activities, picking up roles such as Teaching Assistant,
               Student Orientation Leader, and Student Volunteer.
             </Typography>
-          </div>
-          <Collapse in={showAllEducation}>
             <Typography variant="h5" className={classes.subtitle}>
               {'Winter School @ Hanyang University'}
             </Typography>
@@ -187,6 +210,8 @@ export default function Home() {
               held in Seoul, South Korea. Over there, I experienced how learning
               is like outside of my comfort zone.
             </Typography>
+          </div>
+          <Collapse in={showAllEducation}>
             <Typography variant="h5" className={classes.subtitle}>
               {'Aerospace Engineering @ Temasek Polytechnic'}
             </Typography>
@@ -196,12 +221,9 @@ export default function Home() {
               aligned with my interests, while holding Student Representative
               and Subcommittee roles.
             </Typography>
-            <Typography variant="body1" className={classes.title}>
-              <i>
-                N.B.: I am a strong believer in education, as it hugely
-                contributed to who I am today.
-              </i>
-            </Typography>
+          </Collapse>
+          <Collapse in={showAllEducation}>
+            <Divider className={classes.divider} />
           </Collapse>
         </div>
       </main>
