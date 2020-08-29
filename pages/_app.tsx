@@ -1,14 +1,13 @@
 import React from 'react'
 import Head from 'next/head'
+import { AppPropsType } from 'next/dist/next-server/lib/utils'
 
 import { ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 
 import theme from '../styles/theme'
 
-export default function MyApp(props) {
-  const { Component, pageProps } = props
-
+export default function MyApp({ Component, pageProps }: AppPropsType) {
   React.useEffect(() => {
     const jssStyles = document.querySelector('#jss-server-side')
     if (jssStyles) {
