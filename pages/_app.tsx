@@ -2,9 +2,6 @@ import React from 'react'
 import Head from 'next/head'
 import { AppPropsType } from 'next/dist/next-server/lib/utils'
 
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-
 import { ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 
@@ -16,7 +13,6 @@ export default function MyApp({ Component, pageProps }: AppPropsType) {
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles)
     }
-    AOS.init({ once: true })
   }, [])
 
   return (
@@ -29,9 +25,7 @@ export default function MyApp({ Component, pageProps }: AppPropsType) {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <div style={{ overflowX: 'hidden' }}>
-          <Component {...pageProps} />
-        </div>
+        <Component {...pageProps} />
       </ThemeProvider>
     </React.Fragment>
   )
