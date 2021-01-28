@@ -1,9 +1,9 @@
 import useFooterStyles from '../styles/footer.styles'
 import IconButton from '@material-ui/core/IconButton'
 
-const GITHUB_LINK = 'https://go.kylerwong.dev/github'
-const LINKEDIN_LINK = 'https://go.kylerwong.dev/linkedin'
-const INSTAGRAM_LINK = 'https://go.kylerwong.dev/instagram'
+const GITHUB_LINK = 'https://github.com/kylerwsm'
+const LINKEDIN_LINK = 'https://www.linkedin.com/in/kylerwsm/'
+const INSTAGRAM_LINK = 'https://www.instagram.com/kylerwongg/'
 
 export default function Footer() {
   const classes = useFooterStyles()
