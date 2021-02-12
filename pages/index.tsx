@@ -1,9 +1,7 @@
 import React from 'react'
-import Link from 'next/link'
 
 import Collapse from '@material-ui/core/Collapse'
 import Divider from '@material-ui/core/Divider'
-import MuiLink from '@material-ui/core/Link'
 import Typography from '@material-ui/core/Typography'
 
 import Linked from '../components/linked'
@@ -18,11 +16,9 @@ import useHomeStyles from '../styles/home.styles'
 export default function Home() {
   const classes = useHomeStyles()
   const [showAllExperience, setShowAllExperience] = React.useState(false)
-  const [showAllProjects, setShowAllProjects] = React.useState(false)
   const [showAllEducation, setShowAllEducation] = React.useState(false)
   const toggle = ({
     openExperience = false,
-    openProjects = false,
     openEducation = false,
   }: {
     openExperience?: boolean
@@ -30,7 +26,6 @@ export default function Home() {
     openEducation?: boolean
   }) => {
     setShowAllExperience(openExperience)
-    setShowAllProjects(openProjects)
     setShowAllEducation(openEducation)
   }
   return (
@@ -66,7 +61,7 @@ export default function Home() {
             looking for opportunities to make a change the digital way. When I
             am not programming, you might find me contributing to{' '}
             <Linked href="https://dsc.comp.nus.edu.sg/">#techforgood</Linked>,
-            cooking my favourite dishes, or jogging really slowly.
+            cooking my favourite dishes, or doing light exercises.
           </Typography>
         </div>
         <div id="experience" className={classes.sectionRoot}>
@@ -92,10 +87,11 @@ export default function Home() {
             <Section>
               <SectionTitle>Software Engineer Intern @ Ninja Van</SectionTitle>
               <SectionBody>
-                Supported and facilitated the backend development of new highly
-                scalable and reliable microservices. These microservices are
-                responsible for delivering and customising real-time shipping
-                updates to shippers and consignees in the region.
+                Developed a new Golang micro-service to centralise customers’
+                shipping notifications preferences. Introduced containerised
+                integration testing into the existing Golang workflow. Improved
+                existing internal products and workflow with the use of React,
+                ELK, and Kubernetes.
               </SectionBody>
             </Section>
             <Section>
@@ -103,12 +99,11 @@ export default function Home() {
                 Software Engineer Intern @ Open Government Products
               </SectionTitle>
               <SectionBody>
-                Hugely contributed to the revamp and open-sourcing of{' '}
+                Primary contributor to the revamp and open-source of{' '}
                 <Linked href="https://go.gov.sg">Go.gov.sg</Linked>, the
-                official link shortener for the Singapore government.
-                Additionally, initiated and oversaw improvements, such as the
-                link analytics feature, and TypeScript and React hooks migration
-                for better application robustness.
+                official link shortener for the Singapore government. Initiated
+                and oversaw multiple features and improvements, including the
+                implementation and integration of the link analytics feature.
               </SectionBody>
             </Section>
           </div>
@@ -130,64 +125,15 @@ export default function Home() {
                 Software Engineer Intern @ Housing & Development Board
               </SectionTitle>
               <SectionBody>
-                I researched and prototyped solutions to better manage huge key
-                inventories. In this period, I proposed a mobile application
-                solution, and explored off-the-shelf solutions. The mobile
-                application prototype was built with Flutter and Firebase.
-                Additionally, I compiled and presented a vendor analysis.
+                Researched and prototyped solutions to better manage huge key
+                inventories. Proposed a prototyped mobile application solution,
+                and sourced for other off-the-shelf solutions. Compiled and
+                presented a vendor analysis and how they compare to in-house
+                development.
               </SectionBody>
             </Section>
           </Collapse>
           <Collapse in={showAllExperience}>
-            <Divider className={classes.divider} />
-          </Collapse>
-        </div>
-        <div id="projects" className={classes.sectionRoot}>
-          <Collapse in={showAllProjects}>
-            <Divider className={classes.divider} />
-          </Collapse>
-          <Typography variant="h3" className={classes.title} display="inline">
-            My Projects
-          </Typography>
-          <Typography
-            variant="body1"
-            className={classes.title}
-            display="inline"
-          >
-            <Linked
-              underline="none"
-              onClick={() => toggle({ openProjects: !showAllProjects })}
-            >
-              {!showAllProjects ? 'Show More' : 'Show Less'}
-            </Linked>
-          </Typography>
-          <div>
-            <Section>
-              <SectionTitle>My Very Own Link Shortener</SectionTitle>
-              <SectionBody>
-                This is a simple link shortener application I have built to
-                disseminate my personal dynamic links. An example shortened link
-                is{' '}
-                <Linked href="https://go.kylerwong.dev/linkedin">
-                  https://go.kylerwong.dev/linkedin
-                </Linked>
-                , which deterministically redirects to my LinkedIn profile. Find
-                out more about it on{' '}
-                <Link href="/go">
-                  <MuiLink>this page</MuiLink>
-                </Link>
-                . Anyway, the source code is also public and can be found on my{' '}
-                <Linked href="https://github.com/kylerwsm/lambda-links">
-                  GitHub
-                </Linked>
-                .
-              </SectionBody>
-            </Section>
-          </div>
-          <Collapse in={showAllProjects}>
-            <div></div>
-          </Collapse>
-          <Collapse in={showAllProjects}>
             <Divider className={classes.divider} />
           </Collapse>
         </div>
@@ -216,19 +162,20 @@ export default function Home() {
                 Computer Science @ National University of Singapore
               </SectionTitle>
               <SectionBody>
-                I pursued my NUS Computing degree with Honours over the 2017 to
-                2021 period. In these years, apart from studying really hard and
-                coping with school-life imbalance, I also participated in a wide
-                range of activities, picking up roles such as Teaching
-                Assistant, Student Orientation Leader, and Student Volunteer.
+                I was studying in the National University of Singapore over the
+                2017 to 2021. Outside of studying really hard with minimal me
+                time, I picked up roles in meaningful and ennriching activities.
+                Some of these roles include Teaching Assistant, Student
+                Orientation Leader, and Student Volunteer positions.
               </SectionBody>
             </Section>
             <Section>
               <SectionTitle>Winter School @ Hanyang University</SectionTitle>
               <SectionBody>
-                I participated in the Hanyang Winter School Programme 2019/2020
-                held in Seoul, South Korea. Over there, I experienced how
-                learning is like outside of my comfort zone.
+                I was an exchange student for the Hanyang Winter School
+                Programme 2019/2020 in Seoul, South Korea. My relevant
+                coursework are ISS1076 Digital Studio and ISS1132 Ceramic
+                Practice.
               </SectionBody>
             </Section>
           </div>
@@ -238,10 +185,12 @@ export default function Home() {
                 Aerospace Engineering @ Temasek Polytechnic
               </SectionTitle>
               <SectionBody>
-                I pursued my diploma in Temasek Polytechnic in the 2012 to 2015
-                period. Over these years, I participated in various clubs which
-                aligned with my interests, while holding Student Representative
-                and Subcommittee roles.
+                I was studying in Temasek Polytechnic over 2012 to 2015. Outside
+                of academics, I participated in activities and clubs that
+                interests me. I represented the polytechnic for Polytechnic
+                Forum 2013, was subcommittee member at Temasek Polytechnic
+                International Students&apos; Group, and was an active member at
+                Temasek Polytechnic Visual Central.
               </SectionBody>
             </Section>
           </Collapse>
