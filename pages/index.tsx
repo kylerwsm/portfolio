@@ -122,7 +122,7 @@ export default function Home() {
             </Section>
             <Section>
               <SectionTitle>
-                Software Engineer Intern @ Housing & Development Board
+                System Analyst Intern @ Housing & Development Board
               </SectionTitle>
               <SectionBody>
                 Researched and prototyped solutions to better manage huge key
