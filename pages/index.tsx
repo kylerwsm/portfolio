@@ -162,17 +162,17 @@ export default function Home() {
                 Computer Science @ National University of Singapore
               </SectionTitle>
               <SectionBody>
-                I was studying in the National University of Singapore over the
-                2017 to 2021. Outside of studying really hard with minimal me
-                time, I picked up roles in meaningful and ennriching activities.
-                Some of these roles include Teaching Assistant, Student
-                Orientation Leader, and Student Volunteer positions.
+                I was studying in the National University of Singapore from 2017
+                to 2021. Outside of academics, I picked up roles in meaningful
+                and ennriching activities. These roles include Teaching
+                Assistant, Student Orientation Leader, and Student Volunteer
+                positions.
               </SectionBody>
             </Section>
             <Section>
               <SectionTitle>Winter School @ Hanyang University</SectionTitle>
               <SectionBody>
-                I was an exchange student for the Hanyang Winter School
+                I was an exchange student during the Hanyang Winter School
                 Programme 2019/2020 in Seoul, South Korea. My relevant
                 coursework are ISS1076 Digital Studio and ISS1132 Ceramic
                 Practice.
@@ -185,12 +185,13 @@ export default function Home() {
                 Aerospace Engineering @ Temasek Polytechnic
               </SectionTitle>
               <SectionBody>
-                I was studying in Temasek Polytechnic over 2012 to 2015. Outside
+                I was studying in Temasek Polytechnic from 2012 to 2015. Outside
                 of academics, I participated in activities and clubs that
-                interests me. I represented the polytechnic for Polytechnic
-                Forum 2013, was subcommittee member at Temasek Polytechnic
-                International Students&apos; Group, and was an active member at
-                Temasek Polytechnic Visual Central.
+                interests me. I represented the polytechnic as a Student
+                Representative for the Polytechnic Forum 2013, was subcommittee
+                member at Temasek Polytechnic International Students&apos;
+                Group, and was an active member at Temasek Polytechnic Visual
+                Central.
               </SectionBody>
             </Section>
           </Collapse>
