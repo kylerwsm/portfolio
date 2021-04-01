@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Collapse from '@material-ui/core/Collapse'
 import Divider from '@material-ui/core/Divider'
 import Typography from '@material-ui/core/Typography'
@@ -10,8 +9,46 @@ import Footer from '../components/footer'
 import Section from '../components/sections/section'
 import SectionTitle from '../components/sections/section-title'
 import SectionBody from '../components/sections/section-body'
+import makeStyles from '@material-ui/core/styles/makeStyles'
 
-import useHomeStyles from '../styles/home.styles'
+const useHomeStyles = makeStyles(() => ({
+  appTitle: {
+    marginTop: 48,
+    marginBottom: 48,
+  },
+  sectionRoot: {
+    marginTop: 32,
+    marginBottom: 32,
+    '&:last-child': {
+      marginBottom: 0,
+    },
+  },
+  title: {
+    marginTop: 24,
+    marginBottom: 16,
+    marginRight: 16,
+  },
+  subtitle: {
+    marginTop: 16,
+    marginBottom: 16,
+    '&:last-child': {
+      marginBottom: 0,
+    },
+  },
+  profile: {
+    width: 200,
+    height: 200,
+    borderRadius: 200,
+  },
+  inline: {
+    display: 'flex',
+    alignItems: 'baseline',
+  },
+  divider: {
+    marginTop: 32,
+    marginBottom: 32,
+  },
+}))
 
 export default function Home() {
   const classes = useHomeStyles()
@@ -54,12 +91,11 @@ export default function Home() {
           </Typography>
           <Typography variant="body1" className={classes.subtitle}>
             I am a final year computing student at the National University of
-            Singapore. As a tech enthusiast, I find myself spending a chunk of
-            my time learning and developing arbitrary apps with new tech stacks.
-            Weird how building things out of nothing brings me joy. I am also a
-            believer of ethical and collaborative programming, and am constantly
-            looking for opportunities to make a change the digital way. When I
-            am not programming, you might find me contributing to{' '}
+            Singapore. As a tech enthusiast, I enjoy taking time learning and
+            developing arbitrary apps with new tech stacks. I am also a believer
+            of ethical and collaborative programming, and am constantly looking
+            for opportunities to make a change the digital way. When I am not
+            coding, you might find me contributing to{' '}
             <Linked href="https://dsc.comp.nus.edu.sg/">#techforgood</Linked>,
             cooking my favourite dishes, or doing light exercises.
           </Typography>

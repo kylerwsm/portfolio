@@ -1,8 +1,18 @@
 import React from 'react'
-
 import Container from '@material-ui/core/Container'
+import makeStyles from '@material-ui/core/styles/makeStyles'
 
-import useLayoutStyles from '../styles/layout.styles'
+const useLayoutStyles = makeStyles((theme) => ({
+  root: {
+    width: 'unset',
+    paddingLeft: 16,
+    paddingRight: 16,
+    [theme.breakpoints.up('sm')]: {
+      paddingLeft: 32,
+      paddingRight: 32,
+    },
+  },
+}))
 
 export type LayoutProps = {
   children: React.ReactNode
